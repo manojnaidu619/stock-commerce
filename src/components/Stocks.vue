@@ -1,24 +1,11 @@
 <template lang="html">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-sm-6 col-md-4" v-for="stock in stocks">
-        <div class="card text-black mb-3" style="max-width: 18rem;" >
-          <div class="card-body">
-            <h5 class="card-title">{{stock.name}}<small>(price:{{stock.price}})</small></h5>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Enter Price" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <div class="input-group-append">
-                <button class="btn" type="button">Buy!</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <my-stock v-for="stock in stocks" :stock="stock"></my-stock>
   </div>
 </template>
 
 <script>
+import Stock from './Stock.vue'
 export default {
   data(){
     return{
@@ -31,23 +18,12 @@ export default {
         {id:6, name:'Amazon', price:85}
       ]
     }
+  },
+  components: {
+    'my-stock' : Stock
   }
-
  }
 </script>
 
 <style lang="css" scoped>
-.container{
-  margin-top:50px;
-}
-.card{
-  background-color: Lavender;
-}
-.form-control:focus{
-  outline: 0 !important;
-  box-shadow: none;
-}
-.btn{
-  background-color: Chartreuse;
-}
 </style>
