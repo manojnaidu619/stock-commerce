@@ -1,9 +1,13 @@
 <template lang="html">
-  <h1>Home</h1>
 </template>
 
 <script>
+import Header from './Header.vue'
+
 export default {
+  components: {
+    'my-header' : Header
+  }
 }
 </script>
 
