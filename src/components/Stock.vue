@@ -19,7 +19,7 @@ export default {
   props: ['stock'],
   data(){
     return {
-      quantity: 0
+      quantity: ''
     }
   },
   methods: {
