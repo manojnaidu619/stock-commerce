@@ -1,5 +1,5 @@
 <template lang="html">
-  <h1>Portfolio/h1>
+  <h1>Portfolio</h1>
 </template>
 
 <script>
