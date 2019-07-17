@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="container">
+  <div class="container row">
     <my-stock v-for="stock in stocks" :stock="stock"></my-stock>
   </div>
 </template>
@@ -26,4 +26,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.container{
+  margin-top: 30px;
+}
 </style>
