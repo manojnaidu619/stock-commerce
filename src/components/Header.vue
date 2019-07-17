@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/stocks" class="btn header_links">Stocks</router-link>
+          <router-link to="/stocks" class="btn">Stocks</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/portfolio" class="btn header_links">Portfolio</router-link>
+          <router-link to="/portfolio" class="btn">Portfolio</router-link>
         </li>
       </ul>
     </div>
@@ -30,12 +30,13 @@ export default {
     margin-top:40px;
   }
   .nav-item{
-    margin:20px;
+    margin:5px;
   }
   .navbar{
     border-radius: 20px;
   }
-  .header_links:hover{
-    border-bottom: 2px solid orange;
+  .btn:focus{
+    box-shadow: none;
+    border: 1.5px dashed orange;
   }
 </style>

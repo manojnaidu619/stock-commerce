@@ -10,4 +10,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.container{
+  margin-top:10px;
+}
 </style>
