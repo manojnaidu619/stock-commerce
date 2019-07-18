@@ -24,8 +24,13 @@ export default {
   },
   methods: {
     buy(){
-      const order = this.stock
+      const order = {
+        stockId: this.stock.id,
+        stockPrice: this.stock.price,
+        quantity: this.stock.quantity
+      }
       console.log(order)
+      this.$store.dispatch('buyStock', order)
     }
   }
  }
